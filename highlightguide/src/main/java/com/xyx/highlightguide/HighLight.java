@@ -13,14 +13,14 @@ import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
+import com.xyx.highlightguide.interfaces.HighLightInterface;
+import com.xyx.highlightguide.shape.RectLightShape;
+import com.xyx.highlightguide.util.ViewUtils;
+import com.xyx.highlightguide.view.HightLightView;
+
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
-
-import zhy.com.highlight.interfaces.HighLightInterface;
-import zhy.com.highlight.shape.RectLightShape;
-import zhy.com.highlight.util.ViewUtils;
-import zhy.com.highlight.view.HightLightView;
 
 /**
  * Created by zhy on 15/10/8.
@@ -199,9 +199,10 @@ public class HighLight implements HighLightInterface, ViewTreeObserver.OnGlobalL
 
     /**
      * 设置根布局mAnchor全局布局监听器
-     * @see #registerGlobalLayoutListener()
+     *
      * @param onLayoutCallback
      * @return
+     * @see #registerGlobalLayoutListener()
      */
     public HighLight setOnLayoutCallback(HighLightInterface.OnLayoutCallback onLayoutCallback) {
         if (onLayoutCallback != null) {

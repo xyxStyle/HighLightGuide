@@ -11,8 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
-import zhy.com.highlight.HighLight;
-import zhy.com.highlight.shape.BaseLightShape;
+import com.xyx.highlightguide.HighLight;
+import com.xyx.highlightguide.shape.BaseLightShape;
 
 //  https://github.com/hongyangAndroid/Highlight
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
