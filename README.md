@@ -10,6 +10,7 @@
 
 ## 功能
 
+```
 public  void showKnownTipView(View view)
 {
     mHightLight = new HighLight(MainActivity.this)//
@@ -29,6 +30,7 @@ public  void showKnownTipView(View view)
             .addHighLight(view,R.layout.info_known,new OnBottomPosCallback(10),new OvalLightShape(5,5,20));
     mHightLight.show();
 }
+```
 
 1. anchor(View anchor) 显示区域--阴影区域  anchor：显示区域view
 2. addHighLight(int viewId, int decorLayoutId, OnPosCallback onPosCallback, LightShape lightShape)
